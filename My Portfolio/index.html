@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1071d4e0db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p style="font-size:35px;">Satyaki's Portfolio</p>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Satyaki</span><br>Student at KIIT<br>and a very dedicated Web Developer </h1>
+                <img src="web designer.jpg" class="logo">
+            </div>
+            
+        </div>
+
+    </div>
+    <!-------------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="My image.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate engineering student.I will try my best to reach my goal.I am in love with web development and i am learning programminng language and solve basic problems </p>
+    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>AI/ML</span><br>Building Many Projects</li>
+                            <li><span>Problem Solving</span><br>C/C++</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.Tech Student at KIIT</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Madhyamik From BHOGPUR K.M. HIGH SCHOOL</li>
+                            <li><span>2022</span><br>HS FROM BHOGPUR K.M. HIGH SCHOOL</li>
+                            <li><span>2022-Current</span><br>B.Tech from KIIT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Services---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-web-awesome"></i>
+                    <h2>Web Development</h2>
+                    <p>try to learn how to make various type of websites such as news,chatting website etc.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>AI/ML</h2>
+                    <p>try to learn how to predict the correct of the machine</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Problem Solving</h2>
+                    <p>try to solve various types of real life probems</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Portfolio-------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="human activity recognition.png">
+                    <div class="layer">
+                        <h3>Human Activity Recognition</h3>
+                        <p>The model helps to calculate the correctness of human recognition.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Pubg-game prediction.jpg">
+                    <div class="layer">
+                        <h3>Pubg game prediction</h3>
+                        <p>The model  helps to get the probability of winning the game.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!--------------Contact----------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class = "sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>maitisatyaki17@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9883249663</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/satyaki.maiti.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/satyakimaiti_0405/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/satyaki-maiti-6b3b54278/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class = "copyright">
+            <p>Copyright @ Satyaki made this <i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var links = document.getElementsByClassName("tab-links");
+        var contents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for (link of links){
+                link.classList.remove("active-link");
+            }
+
+            for (content of contents){
+                content.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-786zz1q5WYCKI2Bguao--GdvzZ4ypTlDLXP_BJR9M-sazmm0Y8lTNzaMYa4VqmTT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
